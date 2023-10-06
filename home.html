@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./front.css">
+    <link rel="stylesheet" href="/gowns.css">
+    <link rel="stylesheet" href="./link.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" 
+    rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="image">
+        <div class="text">
+            <h1>I'm Olivia Graham</h1>
+            <p><strong>And I'm Wedding Planner</strong></p>
+            <button>Contact me</button>
+        </div>
+        <div class="sidenav">
+            <ul>
+            <li><a href="#home.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+             <li><a href=#clients">Clients</a></li>
+             <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+   <div class="gallery">
+    
+    <img src="/img/pexels-becerra-govea-photo-6032070.jpg" alt="Becerra Govea">
+    <img src="/img/pexels-john-ray-ebora-3863802.jpg" alt="Ray Eborra">
+    <img src="/img/pexels-suzy-hazelwood-3682153.jpg" alt="Suzy Hazelwood">
+    <img src="/img/pexels-tanya-volt-14940526.jpg" alt="Tanya Volt">
+</div>
+
+    <h1 class="gown">Gowns Form</h1>
+    <p class="mav">Please fill out this form with the required information</p>
+    <form action="https://register-olivia.com" method="post">
+        <fieldset>
+           <label for="firstname">Enter your name
+            <input type="text"  id="firstname" name="firstname" placeholder="Yourname"></label>
+            <label for="lastname">Enter your Surname
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname"></label>
+            <label for="email">Enter your Email
+            <input type="email" id="email" name="email" placeholder="Email Address"></label>
+            <label for="password">Number
+            <input type="text" id="input number" name="number" placeholder="Number"></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="personal-account">Personal Account
+                <input type="radio" id="personal-account" class="inline" name="account-type"></label>
+                <label for="business-account">Business Account
+                <input type="radio" id="busuness-account" class="inline" name="account-type"></label>
+            
+                <label for="terms-and-conditions">
+                    <input type="checkbox" required name="terms-and -condition" class="inline">I accept the <a href="https://www.olivagraham.com/news/terms-of-service">
+                        terms and conditions</a>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture">Upload your choice of Gowns
+                    <input type="file" name="file" id="profile-picture" placeholder="File"></label>
+                <label for="age">Input your price
+                    <input type="number" id="age" name="price" min="0" max="120" placeholder="price">
+                </label>
+                <label for="referrer">Choice your gowns
+                    <select name="referrer" id="referrer">
+                        <option value="">(seclect one)</option>
+                        <option value="1">Night Gown</option>
+                        <option value="2">Evening Gown</option>
+                        <option value="3">Ball Gown</option>
+                        <option value="1">Tea Gown</option>
+                    </select>
+                </label>
+                <label for="message">Message in the Box
+                    <textarea name="message" id="message" cols="100" rows="15" placeholder="Were read you"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="submit">
+    </form>
+</body>
+</html>
